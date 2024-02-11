@@ -34,4 +34,5 @@ export enum ChainKey {
   METIS = 'metis',
   ARBITRUM_NOVA = 'arbitrum-nova',
   BOBA_AVAX = 'boba-avax',
+  BITKUB_CHAIN_TESTNET = 'bkc-testnet',
 }
