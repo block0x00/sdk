@@ -1,6 +1,7 @@
 import {
   Avalanche,
   Binance,
+  Boba,
   Celo,
   Ether,
   Fantom,
@@ -10,17 +11,17 @@ import {
   Heco,
   Kava,
   Matic,
+  Metis,
   Movr,
   Okex,
   Palm,
   Telos,
   xDai,
-  Metis,
-  Boba,
-} from '../entities/Native'
+} from "../entities/Native";
 
-import { ChainId } from '../enums'
-import { NativeMap } from '../types'
+import { ChainId } from "../enums";
+import { NativeMap } from "../types";
+import { Bitkub } from "../entities/Native/Bitkub";
 
 export const NATIVE: NativeMap = {
   [ChainId.ETHEREUM]: Ether.onChain(ChainId.ETHEREUM),
@@ -57,4 +58,5 @@ export const NATIVE: NativeMap = {
   [ChainId.METIS]: Metis.onChain(ChainId.METIS),
   [ChainId.ARBITRUM_NOVA]: Ether.onChain(ChainId.ARBITRUM_NOVA),
   [ChainId.BOBA_AVAX]: Boba.onChain(ChainId.BOBA_AVAX),
-}
+  [ChainId.BITKUB_CHAIN_TESTNET]: Bitkub.onChain(ChainId.BITKUB_CHAIN_TESTNET),
+};
